@@ -1,0 +1,62 @@
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'components/button';
+@import 'components/card';
+@import 'components/composition';
+@import 'components/feature-box';
+@import 'components/story';
+@import 'components/bg-video';
+@import 'components/form';
+@import 'components/popup';
+
+@import 'layout/header';
+@import 'layout/grid';
+@import 'layout/footer';
+@import 'layout/navigation';
+
+@import 'pages/home';
+
+
+.main{
+    display: block;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    .left{
+        width: 30%;
+        display: inline-block;
+        background-color: gray;
+        height: 7rem;
+        padding-left: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .middle{
+        width: 30%;
+        display: inline-block;
+        background-color: firebrick;
+        height: 7rem;
+        padding-left: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .right{
+        width: 30%;
+        display: inline-block;
+        background-color: red;
+        height: 7rem;
+        padding-left: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        
+    }
+    
+    
+}
