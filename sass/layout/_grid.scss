@@ -9,10 +9,11 @@
         }
 
     }
-    @include respond(tab-port){
+    @include respond(phone){
         max-width: 50rem;
         padding: 0 3rem;
     }
+    
     @include clearfix;
 
     [class^="col-"] {
@@ -28,6 +29,10 @@
         @include respond(tab-port){
             width: 100% !important;
         }
+        
+    }
+    @include respond(tab-port){
+        width: 100% !important;
     }
     .col-1-of-2{
         width: calc((100% - #{$gutter-horizontal}) / 2);

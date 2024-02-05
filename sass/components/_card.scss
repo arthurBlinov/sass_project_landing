@@ -4,6 +4,8 @@
     position: relative;
     height: 52rem;
 
+
+
     &_side {
         height: 52rem;
         transition: all .8s ease;
@@ -129,4 +131,50 @@
         font-weight: 100;
     }
 
+    @include respond(tab-port){
+        
+        height: auto;
+        border-radius: 3px;
+        background-color: $color-white;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        text-align: center;
+        
+        &_side {
+           height: auto;
+           transition: all .8s ease;
+           position: relative;
+            &--back {
+                transform: rotateY(0deg);
+                clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0%, 100%);
+               
+            }
+        
+        }
+        &:hover &_side--front{
+            transform: rotateY(0deg);
+        }
+        &:hover &_side--back{
+            transform: rotateY(0deg);
+        }
+        &_details{
+            padding: 1rem 3rem;
+        }
+        &_cta{
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translate(0);
+            width: 100%;
+            padding: 7rem 4rem 4rem 4rem;
+            
+        }
+        &_price-box{
+            
+            margin-bottom: 3rem;
+        }
+       
+        &_price-value{
+            font-size: 6rem;
+        }
+    }
 }
